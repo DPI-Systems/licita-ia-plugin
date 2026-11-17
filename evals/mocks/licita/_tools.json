@@ -435,6 +435,175 @@
    }
   },
   {
+   "name": "ver_empresa",
+   "title": "Ver una empresa",
+   "description": "Úsala para analizar una empresa adjudicataria: la propia (`empresa=\"mia\"`) o un competidor (por id, nombre o NIF). Para varias a la vez usa comparar_empresas.\nPor `vista`: `ficha` (qué gana, dónde y con qué baja: cuánto y cuántos contratos, organismos, sectores, territorio, cómo compite y su baja habitual, también por organismo y tamaño). `contratos` (todos sus contratos, filtrables por canal, estado de ejecución, órgano, CPV o texto). `cartera` (lo que ejecuta ahora y cuándo vence: cuándo atacarle). `puja` (sólo el detalle de su baja; la ficha ya trae la baja habitual, por organismo y por tamaño: no hace falta pedir las dos). `menores` (contratos menores). `historial_ofertas` (a qué se presentó según las actas de la mesa, en qué puesto quedó y a qué distancia del ganador). Si el nombre es ambiguo devuelve las candidatas.",
+   "inputSchema": {
+    "properties": {
+     "empresa": {
+      "description": "'mia', id, nombre o NIF",
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Empresa",
+      "type": "string"
+     },
+     "vista": {
+      "default": "ficha",
+      "enum": [
+       "ficha",
+       "contratos",
+       "cartera",
+       "puja",
+       "menores",
+       "historial_ofertas"
+      ],
+      "title": "Vista",
+      "type": "string"
+     },
+     "canal": {
+      "anyOf": [
+       {
+        "enum": [
+         "concurso",
+         "via_acuerdo_marco",
+         "menor",
+         "encargo"
+        ],
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "title": "Canal"
+     },
+     "ejecucion": {
+      "anyOf": [
+       {
+        "enum": [
+         "en_ejecucion",
+         "finalizado",
+         "sin_fecha"
+        ],
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "title": "Ejecucion"
+     },
+     "organo_id": {
+      "anyOf": [
+       {
+        "minimum": 1,
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "title": "Organo Id"
+     },
+     "cpv": {
+      "anyOf": [
+       {
+        "maxLength": 8,
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "title": "Cpv"
+     },
+     "palabras_clave": {
+      "anyOf": [
+       {
+        "maxLength": 200,
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "title": "Palabras Clave"
+     },
+     "resultado_oferta": {
+      "anyOf": [
+       {
+        "enum": [
+         "won",
+         "lost",
+         "excluded",
+         "withdrawn",
+         "unknown"
+        ],
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Sólo historial_ofertas",
+      "title": "Resultado Oferta"
+     },
+     "desde": {
+      "anyOf": [
+       {
+        "format": "date",
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Periodo: desde (ficha, cartera, contratos, puja)",
+      "title": "Desde"
+     },
+     "hasta": {
+      "anyOf": [
+       {
+        "format": "date",
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "title": "Hasta"
+     },
+     "pagina": {
+      "default": 1,
+      "maximum": 50,
+      "minimum": 1,
+      "title": "Pagina",
+      "type": "integer"
+     }
+    },
+    "required": [
+     "empresa"
+    ],
+    "type": "object",
+    "title": "ver_empresaArguments"
+   },
+   "annotations": {
+    "destructiveHint": false,
+    "idempotentHint": true,
+    "openWorldHint": false,
+    "readOnlyHint": true,
+    "title": "Ver una empresa"
+   }
+  },
+  {
    "name": "analizar_licitacion",
    "title": "Analizar los pliegos (PCAP y PPT)",
    "description": "Úsala cuando la persona quiera evaluar UNA licitación a fondo y ver_licitacion diga que aún no tiene análisis de pliegos, o cuando lo pida («analiza los pliegos», «¿qué piden?»). Ofrécela antes de usarla: no la lances sólo por haber buscado o listado licitaciones.\nLee el pliego de cláusulas administrativas (PCAP) y el de prescripciones técnicas (PPT) y extrae objeto, plazos, solvencia, clasificación, adscripción de medios, criterios con su peso, mejoras, garantías, penalidades y sobres. ESPERA a que termine (uno o dos minutos) y devuelve la ficha completa con el análisis. Si ya estaba hecho, lo devuelve al momento. En el plan gratuito consume uno de los análisis diarios de la organización (uno que ya existe no cuenta).",
@@ -614,175 +783,6 @@
     "openWorldHint": false,
     "readOnlyHint": true,
     "title": "Buscar empresa u órgano"
-   }
-  },
-  {
-   "name": "ver_empresa",
-   "title": "Ver una empresa",
-   "description": "Úsala para analizar una empresa adjudicataria: la propia (`empresa=\"mia\"`) o un competidor (por id, nombre o NIF). Para varias a la vez usa comparar_empresas.\nPor `vista`: `ficha` (cuánto y cuántos contratos gana, con qué organismos, sectores y zonas, con quién compite). `contratos` (todos sus contratos, filtrables por canal, estado de ejecución, órgano, CPV o texto). `cartera` (lo que ejecuta ahora y cuándo vence: cuándo atacarle). `puja` (qué baja suele ofrecer y dónde). `menores` (contratos menores). `historial_ofertas` (a qué se presentó según las actas de la mesa, en qué puesto quedó y a qué distancia del ganador). Si el nombre es ambiguo devuelve las candidatas.",
-   "inputSchema": {
-    "properties": {
-     "empresa": {
-      "description": "'mia', id, nombre o NIF",
-      "maxLength": 200,
-      "minLength": 1,
-      "title": "Empresa",
-      "type": "string"
-     },
-     "vista": {
-      "default": "ficha",
-      "enum": [
-       "ficha",
-       "contratos",
-       "cartera",
-       "puja",
-       "menores",
-       "historial_ofertas"
-      ],
-      "title": "Vista",
-      "type": "string"
-     },
-     "canal": {
-      "anyOf": [
-       {
-        "enum": [
-         "concurso",
-         "via_acuerdo_marco",
-         "menor",
-         "encargo"
-        ],
-        "type": "string"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "default": null,
-      "title": "Canal"
-     },
-     "ejecucion": {
-      "anyOf": [
-       {
-        "enum": [
-         "en_ejecucion",
-         "finalizado",
-         "sin_fecha"
-        ],
-        "type": "string"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "default": null,
-      "title": "Ejecucion"
-     },
-     "organo_id": {
-      "anyOf": [
-       {
-        "minimum": 1,
-        "type": "integer"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "default": null,
-      "title": "Organo Id"
-     },
-     "cpv": {
-      "anyOf": [
-       {
-        "maxLength": 8,
-        "type": "string"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "default": null,
-      "title": "Cpv"
-     },
-     "palabras_clave": {
-      "anyOf": [
-       {
-        "maxLength": 200,
-        "type": "string"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "default": null,
-      "title": "Palabras Clave"
-     },
-     "resultado_oferta": {
-      "anyOf": [
-       {
-        "enum": [
-         "won",
-         "lost",
-         "excluded",
-         "withdrawn",
-         "unknown"
-        ],
-        "type": "string"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "default": null,
-      "description": "Sólo historial_ofertas",
-      "title": "Resultado Oferta"
-     },
-     "desde": {
-      "anyOf": [
-       {
-        "format": "date",
-        "type": "string"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "default": null,
-      "description": "Periodo: desde (ficha, cartera, contratos, puja)",
-      "title": "Desde"
-     },
-     "hasta": {
-      "anyOf": [
-       {
-        "format": "date",
-        "type": "string"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "default": null,
-      "title": "Hasta"
-     },
-     "pagina": {
-      "default": 1,
-      "maximum": 50,
-      "minimum": 1,
-      "title": "Pagina",
-      "type": "integer"
-     }
-    },
-    "required": [
-     "empresa"
-    ],
-    "type": "object",
-    "title": "ver_empresaArguments"
-   },
-   "annotations": {
-    "destructiveHint": false,
-    "idempotentHint": true,
-    "openWorldHint": false,
-    "readOnlyHint": true,
-    "title": "Ver una empresa"
    }
   },
   {
