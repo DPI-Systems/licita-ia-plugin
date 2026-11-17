@@ -1,0 +1,9 @@
+{
+  "name": "licita-ia",
+  "owner": { "name": "DPI Systems", "email": "fernando@licita-ia.es" },
+  "description": "Plugin de Licita IA: licitaciones públicas de España.",
+  "plugins": [
+    { "name": "licita-ia", "source": "./", "category": "productivity",
+      "tags": ["licitaciones", "contratación pública", "España"] }
+  ]
+}

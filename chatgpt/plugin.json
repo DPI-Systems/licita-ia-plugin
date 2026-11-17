@@ -1,0 +1,88 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "licita-ia",
+  "version": "1.0.0",
+  "description": "Licitaciones públicas de España en ChatGPT: buscar oportunidades, recomendaciones de tu organización, pliegos con cita de página, competencia y preparación de ofertas.",
+  "author": { "name": "DPI Systems", "email": "fernando@licita-ia.es", "url": "https://licita-ia.es" },
+  "homepage": "https://licita-ia.es/asistentes",
+  "repository": "https://github.com/DPI-Systems/licita-ia-plugin",
+  "license": "MIT",
+  "keywords": ["licitaciones", "contratación pública", "pliegos", "public procurement", "tenders", "Spain"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Licita IA",
+        "shortDescription": "Concursos públicos en España",
+        "longDescription": "Licita IA conecta ChatGPT con tu cuenta de Licita IA, la plataforma de licitaciones públicas de España (Plataforma de Contratación del Sector Público y plataformas autonómicas, actualizadas a diario).\n\nQué puedes hacer:\n- Buscar licitaciones por texto, tipo de contrato, comunidad, provincia, órgano, importe, plazo, CPV o CNAE, y ver las que se preparan o vuelven a salir.\n- Consultar las recomendaciones de tu organización (Descubrir), ordenadas según tus líneas de actividad.\n- Abrir la ficha de una licitación con su análisis rápido, la competencia probable, la baja en contratos comparables, la mesa de contratación y el acuerdo marco.\n- Buscar dentro de los pliegos y leerlos, con cita de documento y página, también como imagen de la página, y obtener enlaces de descarga de 10 minutos.\n- Analizar empresas y órganos de contratación, comparar competidores, ver tu mercado y simular qué puesto habría sacado otra oferta.\n- Descartar, comentar o lanzar el análisis rápido de una licitación para tu equipo (siempre con confirmación).\n- Con plan de pago: procesar los pliegos a fondo, los procedimientos tipo (qué presentar, estudio de costes, modelos), los ficheros del Workbench y la documentación de tu empresa.\n\nNecesitas una cuenta de Licita IA (hay plan gratuito). Todo lo que ves está limitado a tu organización y a tu plan. Licita IA no recibe tu conversación: sólo las peticiones a sus herramientas. El servicio está en español y cubre la contratación pública de España.",
+        "developerName": "DPI Systems",
+        "category": "Productivity",
+        "capabilities": [
+          "Buscar licitaciones públicas de España",
+          "Recomendaciones de tu organización",
+          "Leer y citar pliegos",
+          "Competencia, bajas y simulación de ofertas",
+          "Empresas y órganos de contratación"
+        ],
+        "websiteURL": "https://licita-ia.es",
+        "supportURL": "https://licita-ia.es/asistentes#soporte",
+        "privacyPolicyURL": "https://licita-ia.es/privacidad",
+        "termsOfServiceURL": "https://licita-ia.es/condiciones",
+        "defaultPrompt": [
+          "¿Qué licitaciones me recomienda Licita esta semana?",
+          "Busca licitaciones abiertas de limpieza en Sevilla",
+          "¿Quién suele ganar los contratos de este órgano y con qué baja?"
+        ],
+        "brandColor": "#6B2A2F",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Search open public tenders by subject and location; results render in the search-results card.",
+              "prompt": "Busca licitaciones abiertas de limpieza de edificios en Sevilla",
+              "tools_triggered": "buscar_licitaciones",
+              "expected_behavior": "Calls buscar_licitaciones with palabras_clave about cleaning and provincia Sevilla, then shows a numbered list of open tenders (title, contracting body, budget without VAT, deadline) with links to licita-ia.es, inside the Licita results card."
+            },
+            {
+              "description": "Personalised recommendations for the signed-in organisation.",
+              "prompt": "¿Qué licitaciones me recomienda Licita para mi empresa?",
+              "tools_triggered": "recomendar_licitaciones",
+              "expected_behavior": "Calls recomendar_licitaciones and shows the organisation's Discover home grouped in rows (activity lines, usual contracting bodies), with the Discover card."
+            },
+            {
+              "description": "Open one tender and its competition analysis.",
+              "prompt": "Abre la licitación 14193 y dime quién suele ganar este tipo de contratos y con qué baja",
+              "tools_triggered": "ver_licitacion",
+              "expected_behavior": "Calls ver_licitacion with apartado=ficha (tender card) and then apartado=competencia; summarises likely competitors and the typical discount on comparable contracts."
+            },
+            {
+              "description": "Answer a question from the tender documents with document and page citation.",
+              "prompt": "¿Qué plazo de garantía exigen los pliegos de la licitación 14193? Cita documento y página.",
+              "tools_triggered": "listar_documentos, buscar_en_documentos, leer_documento",
+              "expected_behavior": "Lists the processed documents, searches them for the guarantee period and answers with the value found, citing the document name and page number."
+            },
+            {
+              "description": "Look up a company's public-procurement track record.",
+              "prompt": "¿Qué contratos públicos ha ganado Clece en el último año?",
+              "tools_triggered": "buscar_empresa_u_organo, ver_empresa",
+              "expected_behavior": "Resolves the company by name and summarises its recent awards (number, amount, main contracting bodies, typical discount)."
+            }
+          ],
+          "negative": [
+            { "description": "Weather question unrelated to public procurement.", "prompt": "¿Qué tiempo hará mañana en Madrid?" },
+            { "description": "Creative writing unrelated to tenders.", "prompt": "Escríbeme un poema sobre el otoño" },
+            { "description": "Job offers are not public tenders; the plugin should not be used.", "prompt": "Busca ofertas de empleo de programador en Barcelona" }
+          ]
+        },
+        "demo_recording_url": "__DEMO__",
+        "commerce": false
+      },
+      "publication": {
+        "countries": ["ES"],
+        "release_notes": "Primera versión pública: búsqueda, recomendaciones, fichas, competencia, pliegos y recetas de Licita IA."
+      }
+    }
+  }
+}

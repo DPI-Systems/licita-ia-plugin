@@ -1,0 +1,20 @@
+{
+  "name": "licita-ia",
+  "displayName": "Licita IA",
+  "version": "1.0.0",
+  "description": "Licitaciones públicas de España en Claude: busca y filtra oportunidades, consulta las recomendaciones de tu organización, lee los pliegos con cita de página, analiza la competencia y la baja, y prepara la oferta con los procedimientos de Licita IA.",
+  "author": {
+    "name": "DPI Systems",
+    "email": "fernando@licita-ia.es",
+    "url": "https://licita-ia.es"
+  },
+  "homepage": "https://licita-ia.es/asistentes",
+  "repository": "https://github.com/DPI-Systems/licita-ia-plugin",
+  "license": "MIT",
+  "keywords": ["licitaciones", "contratación pública", "pliegos", "concursos públicos", "PLACSP", "España", "public procurement", "tenders"],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://licita-ia.es/asistentes",
+  "supportUrl": "https://licita-ia.es/asistentes#soporte",
+  "privacyPolicyUrl": "https://licita-ia.es/privacidad",
+  "termsOfServiceUrl": "https://licita-ia.es/condiciones"
+}

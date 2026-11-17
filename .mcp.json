@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "licita": {
+      "type": "http",
+      "url": "https://licita-ia.es/api/mcp"
+    }
+  }
+}
