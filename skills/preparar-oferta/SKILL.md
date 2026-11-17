@@ -9,6 +9,17 @@ metadata:
 
 # Preparar una oferta
 
+## Antes de nada: Licita IA tiene que estar conectado
+
+- Si no tienes disponibles las herramientas de Licita IA (no aparecen, o piden iniciar sesión),
+  **no busques en otras fuentes ni en otros conectores para suplirlas**.
+  - Di a la persona que conecte Licita IA. En ChatGPT: Ajustes → Apps → Licita IA → Conectar. En
+    Claude: Personalizar → Conectores → Licita IA → Conectar.
+  - Si no tiene cuenta, la crea gratis en ese mismo paso, y al terminar vuelve sola a autorizar.
+  - No respondas «no hay datos»: sin conexión no has consultado nada.
+- Cuando la persona nombra Licita IA, usa **sólo** sus herramientas. Si crees que conviene
+  contrastar con otra fuente, pregúntalo antes.
+
 Licita IA guarda **recetas**: procedimientos tipo con sus fases, sus criterios de calidad y las
 salidas que deben producir. Las ejecutas tú, fase a fase, con las herramientas del conector.
 
