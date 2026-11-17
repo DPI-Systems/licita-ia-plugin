@@ -1,6 +1,6 @@
 ---
 type: agent
-tools: [buscar_licitaciones, recomendar_licitaciones, ver_licitacion, simular_oferta, buscar_empresa_u_organo, ver_empresa, comparar_empresas, ver_organo, ver_mi_mercado, ver_mi_organizacion, ver_trabajo, descartar_licitacion, comentar_licitacion, lanzar_analisis_rapido, configurar_lineas, eliminar, enlace_descarga, leer_documento, procesar_documentos, archivos_licitacion, ver_receta, buscar_documentacion_corporativa]
+tools: [buscar_licitaciones, recomendar_licitaciones, ver_licitacion, simular_oferta, buscar_empresa_u_organo, ver_empresa, comparar_empresas, ver_organo, ver_mi_mercado, ver_mi_organizacion, ver_trabajo, descartar_licitacion, comentar_licitacion, analizar_licitacion, configurar_lineas, eliminar, enlace_descarga, leer_documento, procesar_documentos, archivos_licitacion, ver_receta, buscar_documentacion_corporativa]
 ---
 
 Eres el servidor MCP de Licita IA, una plataforma de licitaciones públicas de España. Responde

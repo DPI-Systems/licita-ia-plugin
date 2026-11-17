@@ -435,6 +435,53 @@
    }
   },
   {
+   "name": "analizar_licitacion",
+   "title": "Analizar los pliegos (PCAP y PPT)",
+   "description": "Úsala cuando la persona quiera evaluar UNA licitación a fondo y ver_licitacion diga que aún no tiene análisis de pliegos, o cuando lo pida («analiza los pliegos», «¿qué piden?»). Ofrécela antes de usarla: no la lances sólo por haber buscado o listado licitaciones.\nLee el pliego de cláusulas administrativas (PCAP) y el de prescripciones técnicas (PPT) y extrae objeto, plazos, solvencia, clasificación, adscripción de medios, criterios con su peso, mejoras, garantías, penalidades y sobres. ESPERA a que termine (uno o dos minutos) y devuelve la ficha completa con el análisis. Si ya estaba hecho, lo devuelve al momento. En el plan gratuito consume uno de los análisis diarios de la organización (uno que ya existe no cuenta).",
+   "inputSchema": {
+    "properties": {
+     "licitacion_id": {
+      "anyOf": [
+       {
+        "minimum": 1,
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Id numérico de Licita (el `id` de cualquier resultado). Preferible al expediente.",
+      "title": "Licitacion Id"
+     },
+     "expediente": {
+      "anyOf": [
+       {
+        "maxLength": 200,
+        "minLength": 1,
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Número de expediente, si no se tiene el id. Si coincide con varias licitaciones se devuelven las candidatas.",
+      "title": "Expediente"
+     }
+    },
+    "type": "object",
+    "title": "analizar_licitacionArguments"
+   },
+   "annotations": {
+    "destructiveHint": false,
+    "idempotentHint": true,
+    "openWorldHint": false,
+    "readOnlyHint": false,
+    "title": "Analizar los pliegos (PCAP y PPT)"
+   }
+  },
+  {
    "name": "simular_oferta",
    "title": "Simular una oferta en la mesa",
    "description": "Úsala para «¿qué habría pasado si hubiéramos ofertado X?», «¿con cuánto habríamos ganado?» o «¿ese precio cae en baja anormal?» sobre un lote YA abierto por la mesa. Repite la decisión de la mesa con ese licitador a `precio` y el resto de ofertas tal como se publicaron: puntos, puesto, margen con el mejor rival y si el precio se habría presumido anormalmente bajo. No guarda nada.\n`lote` es el `lot_id` de ver_licitacion(apartado='mesa'). `licitador`: `mia` (por defecto, la oferta de la organización en ese lote), o el `bid_id` o el nombre de otro licitador del lote. Sólo funciona en lotes cuya fórmula se pudo reconstruir (`simulacro` true en la mesa). Precio en euros sin IVA, en la misma unidad que las ofertas del lote.",
@@ -1008,7 +1055,7 @@
   {
    "name": "ver_trabajo",
    "title": "Estado de un trabajo en curso",
-   "description": "Úsala después de lanzar_analisis_rapido o procesar_documentos para saber si ya está («¿ya está el análisis?», «¿ya puedo buscar en el pliego?»). No puedes avisar a la persona cuando termine: dile que te pregunte.\n`trabajo` es el identificador que devolvió la herramienta que lo lanzó: `analisis:<id>` (el resultado sale en ver_licitacion) o `documentos:<id>` (luego, buscar_en_documentos).",
+   "description": "Úsala después de analizar_licitacion (si no terminó a tiempo) o procesar_documentos para saber si ya está («¿ya está el análisis?», «¿ya puedo buscar en el pliego?»). No puedes avisar a la persona cuando termine: dile que te pregunte.\n`trabajo` es el identificador que devolvió la herramienta que lo lanzó: `analisis:<id>` (el resultado sale en ver_licitacion) o `documentos:<id>` (luego, buscar_en_documentos).",
    "inputSchema": {
     "properties": {
      "trabajo": {
@@ -1155,36 +1202,6 @@
    }
   },
   {
-   "name": "lanzar_analisis_rapido",
-   "title": "Lanzar análisis rápido",
-   "description": "Úsala cuando ver_licitacion diga que una licitación no tiene análisis rápido y la persona quiera saber qué piden los pliegos (solvencia, clasificación, criterios, garantías, penalidades, sobres). Tarda uno o dos minutos por licitación; sigue cada una con ver_trabajo. En el plan gratuito consume uno de los análisis diarios de la organización (uno que ya existe no cuenta); si uno falló, se recupera sin gastar.",
-   "inputSchema": {
-    "properties": {
-     "licitacion_ids": {
-      "items": {
-       "type": "integer"
-      },
-      "maxItems": 5,
-      "minItems": 1,
-      "title": "Licitacion Ids",
-      "type": "array"
-     }
-    },
-    "required": [
-     "licitacion_ids"
-    ],
-    "type": "object",
-    "title": "lanzar_analisis_rapidoArguments"
-   },
-   "annotations": {
-    "destructiveHint": false,
-    "idempotentHint": true,
-    "openWorldHint": false,
-    "readOnlyHint": false,
-    "title": "Lanzar análisis rápido"
-   }
-  },
-  {
    "name": "configurar_lineas",
    "title": "Configurar líneas de actividad",
    "description": "Úsala para cambiar lo que Licita recomienda a la organización: crear, editar, activar o desactivar una línea de actividad. Afecta a Descubrir y a los avisos de todo el equipo, así que confirma con la persona el nombre y lo que incluye; prueba antes las consultas con ver_mi_organizacion (apartado='probar_linea'). Para quitar una línea usa eliminar. La gramática de las consultas: Cada consulta es una fórmula en árbol JSON. Nodos: {\"y\": [...]} (todas), {\"o\": [...]} (alguna), {\"no\": nodo} (sólo dentro de un \"y\"). Hojas: {\"cpv\": \"4523\"} (prefijo CPV, 3 dígitos o más), {\"zona\": [\"ES51\", \"ES300\"]} (códigos NUTS), {\"importe\": {\"min\": 100000, \"max\": 2000000}} (sin IVA), {\"palabra\": \"asfalt*\"} (palabra del título; * = empieza por), {\"frase\": \"mantenimiento de carreteras\"}. Una licitación entra en la línea si cumple ALGUNA consulta. Evita palabras genéricas sueltas (mantenimiento, servicio, obras): no discriminan.",
@@ -1305,7 +1322,7 @@
   {
    "name": "listar_documentos",
    "title": "Documentos de una licitación",
-   "description": "Úsala para saber qué documentos tiene una licitación (pliegos, anexos, presupuesto, planos), si ya están procesados en Licita y para descargarlos. Para buscar dentro, usa buscar_en_documentos.\nDevuelve: los documentos procesados, con su `documento_id` y cuántos fragmentos de texto, tablas y figuras tiene cada uno (se pueden buscar y leer); los que esperan o fallaron; y el catálogo que publicó el órgano (`catalogo:N`), procesado o no. Cualquiera de los dos se descarga con enlace_descarga. Si no hay ninguno procesado, procesar_documentos los procesa (plan de pago).",
+   "description": "Úsala para saber qué documentos tiene una licitación (pliegos, anexos, presupuesto, planos), si ya están procesados en Licita y para descargarlos. Para buscar dentro, usa buscar_en_documentos.\nDevuelve: los documentos procesados, con su `documento_id` y cuántos fragmentos de texto, tablas y figuras tiene cada uno (se pueden buscar y leer); los que esperan o fallaron; y el catálogo que publicó el órgano (`catalogo:N`), procesado o no. Cualquiera de los dos se descarga con enlace_descarga. Si no hay ninguno procesado y la persona lo pide, procesar_documentos los procesa (plan de pago).",
    "inputSchema": {
     "properties": {
      "licitacion_id": {

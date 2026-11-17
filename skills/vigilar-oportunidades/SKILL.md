@@ -34,7 +34,8 @@ metadata:
 - Pagina con `pagina` en vez de pedir más filtros a ciegas.
 
 Muestra la lista numerada (título, órgano, importe, cierre) con su enlace, y ofrece abrir una
-con la skill `estudiar-licitacion`.
+con la skill `estudiar-licitacion`. Listar no analiza: el análisis de los pliegos
+(`analizar_licitacion`) se ofrece después, para la licitación que interese.
 
 ## Afinar
 
