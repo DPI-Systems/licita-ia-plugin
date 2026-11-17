@@ -52,10 +52,10 @@
         "test_cases": {
           "positive": [
             {
-              "description": "Search open public tenders by subject and location; results render in the search-results card.",
-              "prompt": "Busca licitaciones abiertas de limpieza de edificios en Sevilla",
+              "description": "Search open public tenders by contracting body, keywords and deadline; results render in the search-results card.",
+              "prompt": "Busca licitaciones abiertas de cerramientos de ADIF que cierren antes de fin de año",
               "tools_triggered": "buscar_licitaciones",
-              "expected_behavior": "Calls buscar_licitaciones with palabras_clave about cleaning and provincia Sevilla, then shows a numbered list of open tenders (title, contracting body, budget without VAT, deadline) with links to licita-ia.es, inside the Licita results card."
+              "expected_behavior": "Calls buscar_licitaciones (if several ADIF bodies match, it asks or picks ADIF - Presidencia) and shows a card with ~4 open fencing works tenders from ADIF, including 6907380 (line 200, Guadalajara, 537,009 EUR, closes 01/12/2026), each with body, type, CPV, budget with and without VAT, deadline and a link to Licita."
             },
             {
               "description": "Personalised recommendations for the signed-in organisation.",
@@ -64,16 +64,16 @@
               "expected_behavior": "Calls recomendar_licitaciones and shows the organisation's Discover home grouped in rows (activity lines, usual contracting bodies), with the Discover card."
             },
             {
-              "description": "Open one tender and its competition analysis.",
-              "prompt": "Abre la licitación 14193 y dime quién suele ganar este tipo de contratos y con qué baja",
+              "description": "Open one tender: the full card with budget, expected discount, win probability, competitors and award criteria.",
+              "prompt": "Abre la licitación 6907380 y dime quién suele ganar este tipo de contratos y con qué baja",
               "tools_triggered": "ver_licitacion",
-              "expected_behavior": "Calls ver_licitacion with apartado=ficha (tender card) and then apartado=competencia; summarises likely competitors and the typical discount on comparable contracts."
+              "expected_behavior": "Calls ver_licitacion and shows the tender card: budget 537,009.32 EUR without VAT, expected discount around 13 % (9-17 %), likely competitors (UTEs and companies that win at ADIF) and the criteria (value judgement 49, cost 51); summarises who usually wins and the typical discount."
             },
             {
-              "description": "Answer a question from the tender documents with document and page citation.",
-              "prompt": "¿Qué plazo de garantía exigen los pliegos de la licitación 14193? Cita documento y página.",
-              "tools_triggered": "listar_documentos, buscar_en_documentos, leer_documento",
-              "expected_behavior": "Lists the processed documents, searches them for the guarantee period and answers with the value found, citing the document name and page number."
+              "description": "Answer from the tender documents with document and page citation.",
+              "prompt": "¿Qué clasificación del contratista exige la licitación 6907380? Cita documento y página.",
+              "tools_triggered": "buscar_en_documentos, leer_documento",
+              "expected_behavior": "Searches the processed documents and answers Group D, subgroup 5, category 3 (railway works), citing the Pliego de Cláusulas Administrativas, page 4."
             },
             {
               "description": "Look up a company's public-procurement track record.",
