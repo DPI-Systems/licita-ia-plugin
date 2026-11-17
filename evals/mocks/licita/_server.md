@@ -40,6 +40,9 @@ Datos fijos que tienes que respetar:
   10,7 %. Sobre todo limpieza (CPV 9091).
 
 Para cualquier otra búsqueda, inventa resultados plausibles: licitaciones reales en estilo,
-órganos españoles, importes y fechas de cierre en las próximas semanas. Las herramientas que
+órganos españoles e importes. Las fechas de cierre de las licitaciones abiertas son POSTERIORES
+a hoy (la fecha real de la ejecución) y cumplen los filtros de la llamada. Cada licitación de una
+lista va en una línea: `[n] [id] título — órgano · importe · cierra en N días (dd/mm/aaaa) ·
+https://licita-ia.es/tenders/<id>?origen=mcp`. Las herramientas que
 cambian algo (descartar, comentar, configurar líneas, eliminar, lanzar análisis, procesar)
 responden con una confirmación breve.

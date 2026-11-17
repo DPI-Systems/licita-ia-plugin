@@ -1,0 +1,15 @@
+---
+type: fixed
+---
+
+12 licitaciones (página 1):
+[1] [8401080] servicio de limpieza en el archivo histórico provincial de sevilla — Delegación Territorial de Turismo, Cultura y Deporte en Sevilla · 91 k€ · cierra en 3 días (20/11/2026) · https://licita-ia.es/tenders/8401080?origen=mcp
+[2] [742793] Contratación del servicio de limpieza para Congresos y Turismo de Sevilla, S.A. — Consejería Delegada de Congresos y Turismo de Sevilla S.A. · 1,35 M€ · cierra en 13 días (30/11/2026) · https://licita-ia.es/tenders/742793?origen=mcp
+[3] [7799674] Servicio de recepción y limpieza de la Residencia de Deportistas de la Cartuja (Sevilla). — Empresa Pública para la Gestión del Turismo y el Deporte de Andalucía, S.A. · 740 k€ · cierra en 14 días (01/12/2026) · https://licita-ia.es/tenders/7799674?origen=mcp
+[4] [8396635] Servicio de limpieza de oficinas y otras dependencias anexas del Hospital Psiquiátrico Penitenciario de Sevilla. — Dirección del Hospital Psiquiátrico Penitenciario de Sevilla · 57 k€ · cierra mañana (18/11/2026) · https://licita-ia.es/tenders/8396635?origen=mcp
+[5] [5274792] sv limpieza del museo de artes y costumbres populares de sevilla 26-28 — Delegación Territorial de Turismo, Cultura y Deporte en Sevilla · 218 k€ · cierra mañana (18/11/2026) · https://licita-ia.es/tenders/5274792?origen=mcp
+[6] [5315278] Acuerdo Marco para el suministro de productos químicos, materiales de limpieza y celulosas para los edificios de la Universidad de Sevilla. — Rectorado de la Universidad de Sevilla · cierra en 3 días (20/11/2026) · https://licita-ia.es/tenders/5315278?origen=mcp
+[7] [5308670] Adquisición de una Barredora de Aspiración de 5 m3, para el Servicio de Limpieza Viaria del Ayuntamiento de Dos Hermanas — Junta de Gobierno del Ayuntamiento de Dos Hermanas · 240 k€ · cierra en 2 días (19/11/2026) · https://licita-ia.es/tenders/5308670?origen=mcp
+[8] [6908402] Suministro de combustible y la limpieza de vehículos en régimen de autoservicio en la estación de servicio del adjudicatario del suministro de combustible para los vehículos y maquinaria del parque móvil del Ayuntamiento de La Rinconada y sus Organismo A… — Junta de Gobierno del Ayuntamiento de La Rinconada · 120 k€ · cierra en 6 días (23/11/2026) · https://licita-ia.es/tenders/6908402?origen=mcp
+[9] [8402588] Prestación integral del servicio de diseño artístico, transporte de material explosivo, montaje técnico, disparo digital y posterior limpieza y recogida de residuos de tres espectáculos pirotécnicos aéreos anuales en el municipio de Osuna — Junta de Gobierno Local del Ayuntamiento de Osuna · 11 k€ · cierra en 3 días (20/11/2026) · https://licita-ia.es/tenders/8402588?origen=mcp
+[10] [8430209] Elaboración de la matriz de doble materialidad de Lipasam y análisis Gap del EINF. — Gerencia de Limpieza Pública y Protección Ambiental Sociedad Anónima Municipal (LIPASAM) · 11 k€ · cierra en 10 días (27/11/2026) · https://licita-ia.es/tenders/8430209?origen=mcp
