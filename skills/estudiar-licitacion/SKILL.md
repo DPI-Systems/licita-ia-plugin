@@ -42,6 +42,9 @@ Para cada punto que decida el go / no-go, compruébalo en los documentos:
 4. Si los documentos no están procesados: dilo. `procesar_documentos` es de plan de pago.
    Mientras, trabaja con la ficha y ofrece `enlace_descarga` del pliego.
 
+Para los conceptos (procedimientos, garantías, solvencia, baja anormal, recursos) consulta
+`references/lcsp.md`, y que el pliego mande sobre la referencia.
+
 **Cita siempre** documento y página («PCAP, pág. 14»). Si un dato no aparece, di que no aparece;
 no lo supongas.
 

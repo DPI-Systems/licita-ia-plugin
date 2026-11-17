@@ -16,9 +16,9 @@ metadata:
 | Competencia en **esta** licitación | `ver_licitacion(apartado="competencia")` |
 | Quién ofertó y con qué puntos (ya abierta) | `ver_licitacion(apartado="mesa")`, y con `lote` el detalle |
 | «¿Y si hubiéramos ofertado X?» | `simular_oferta(lote, precio, licitador)` |
-| Una empresa (adjudicaciones, órganos, bajas) | `buscar_empresa_u_organo` → `ver_empresa` |
-| Varias empresas frente a frente | `comparar_empresas` |
-| Un órgano (a quién adjudica, cuánto, cómo) | `ver_organo` |
+| Una empresa (adjudicaciones, órganos, bajas) | `buscar_empresa_u_organo(tipo="empresa", nombre_busqueda=…)` → `ver_empresa` (con `vista="puja"`, su baja) |
+| Varias empresas frente a frente | `comparar_empresas(modo="lado_a_lado", empresas=[…])`; parecidas a una: `modo="similares"` |
+| Un órgano (a quién adjudica, cuánto, cómo) | `buscar_empresa_u_organo(tipo="organo", …)` → `ver_organo` |
 | La posición de mi empresa en su sector | `ver_mi_mercado` |
 
 Las empresas se nombran por id, nombre o NIF; si hay varias candidatas, pregunta cuál.
@@ -30,7 +30,8 @@ Las empresas se nombran por id, nombre o NIF; si hay varias candidatas, pregunta
    importe parecido), no de una media del sector.
 2. Mira **cuántos licitadores** hubo en esos contratos: con un solo licitador, adjudicar al
    precio de licitación es lo normal y no dice nada de la baja.
-3. Compara con el **umbral de baja anormal** del pliego (búscalo con `buscar_en_documentos`:
+3. Compara con el **umbral de baja anormal** del pliego (si el pliego no lo fija, el art. 85
+   del RGLCAP: con 3 o más licitadores, más de 10 puntos por debajo de la media) (búscalo con `buscar_en_documentos`:
    «ofertas anormalmente bajas», «temeraria») y con la fórmula de puntuación del precio.
 4. Si hay mesa abierta, `simular_oferta` dice qué puesto, cuántos puntos y qué margen habría
    tenido otro precio, y si caería en anormal.

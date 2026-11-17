@@ -3,11 +3,22 @@
   "name": "licita-ia",
   "version": "1.0.0",
   "description": "Licitaciones públicas de España en ChatGPT: buscar oportunidades, recomendaciones de tu organización, pliegos con cita de página, competencia y preparación de ofertas.",
-  "author": { "name": "DPI Systems", "email": "fernando@licita-ia.es", "url": "https://licita-ia.es" },
+  "author": {
+    "name": "DPI Systems",
+    "email": "fernando@licita-ia.es",
+    "url": "https://licita-ia.es"
+  },
   "homepage": "https://licita-ia.es/asistentes",
   "repository": "https://github.com/DPI-Systems/licita-ia-plugin",
   "license": "MIT",
-  "keywords": ["licitaciones", "contratación pública", "pliegos", "public procurement", "tenders", "Spain"],
+  "keywords": [
+    "licitaciones",
+    "contratación pública",
+    "pliegos",
+    "public procurement",
+    "tenders",
+    "Spain"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -36,6 +47,7 @@
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png"
       },
+      "onboardingSkill": "./skills/primeros-pasos/SKILL.md",
       "review": {
         "test_cases": {
           "positive": [
@@ -71,16 +83,27 @@
             }
           ],
           "negative": [
-            { "description": "Weather question unrelated to public procurement.", "prompt": "¿Qué tiempo hará mañana en Madrid?" },
-            { "description": "Creative writing unrelated to tenders.", "prompt": "Escríbeme un poema sobre el otoño" },
-            { "description": "Job offers are not public tenders; the plugin should not be used.", "prompt": "Busca ofertas de empleo de programador en Barcelona" }
+            {
+              "description": "Weather question unrelated to public procurement.",
+              "prompt": "¿Qué tiempo hará mañana en Madrid?"
+            },
+            {
+              "description": "Creative writing unrelated to tenders.",
+              "prompt": "Escríbeme un poema sobre el otoño"
+            },
+            {
+              "description": "Job offers are not public tenders; the plugin should not be used.",
+              "prompt": "Busca ofertas de empleo de programador en Barcelona"
+            }
           ]
         },
         "demo_recording_url": "__DEMO__",
         "commerce": false
       },
       "publication": {
-        "countries": ["ES"],
+        "countries": [
+          "ES"
+        ],
         "release_notes": "Primera versión pública: búsqueda, recomendaciones, fichas, competencia, pliegos y recetas de Licita IA."
       }
     }
