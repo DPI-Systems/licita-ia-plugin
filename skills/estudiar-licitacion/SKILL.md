@@ -54,8 +54,10 @@ Para cada punto que decida el go / no-go, compruébalo en los documentos:
    mediante fórmula», «garantía definitiva», «subcontratación», «penalidades»…).
 3. `leer_documento` con los `chunk_ids` o las `paginas` para el texto completo. Para cuadros,
    tablas mal extraídas, casillas marcadas o planos, `modo="imagen"`.
-4. Si los documentos no están procesados: dilo. `procesar_documentos` es de plan de pago.
-   Mientras, trabaja con la ficha y ofrece `enlace_descarga` del pliego.
+4. Si los documentos no están procesados, la búsqueda no los alcanza, pero se leen igual:
+   `listar_documentos` y `enlace_descarga` dan el enlace del órgano de cada documento. Descárgalo y
+   ábrelo (o trabaja con él en tu entorno). `procesar_documentos` (plan de pago) sólo si la persona
+   quiere buscar dentro.
 
 Para los conceptos (procedimientos, garantías, solvencia, baja anormal, recursos) consulta
 `references/lcsp.md`, y que el pliego mande sobre la referencia.

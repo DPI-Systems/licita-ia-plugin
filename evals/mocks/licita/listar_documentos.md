@@ -3,40 +3,42 @@ type: fixed
 ---
 
 10 documento(s) procesado(s) de la licitación 14193:
-• [70761] PCAP y anexos Expte 000526 Lote 1 SDA 011822.pdf — 67 texto, 8 tabla
-• [70762] PPTP Expte 000526 El Ronquillo Lote 1 SDA 011822.pdf — 142 texto, 45 tabla, 6 figura
-• [70767] 2026-f2d32284-4856-4fe9-830f-547c6c66680a — 18 texto, 5 tabla
-• [70769] 2026-f2c03a15-3eff-45c8-94d7-d8d4212909eb — 6 texto, 1 tabla
-• [70770] 2026-e24ad842-1be8-4dab-802b-9f2bd4aa40cf — 2 texto
-• [70771] 2026-d826873d-5bdc-4074-ad80-f2f5cb16199e — 1 texto, 1 tabla
-• [70772] 2026-b46594a9-2950-4fda-8ccb-c387f71c3064 — 2 texto
-• [70773] 2026-54542943-7d11-4599-9ced-0511d528c084 — 1 texto, 1 tabla
-• [70774] 2026-66e66b47-fc4a-461d-8b14-26b2c7bda3df — 22 texto, 8 tabla
-• [70775] 2026-e09a4512-9ee6-46b1-897b-0c3997f97939 — 4 texto, 1 tabla
+• [70761] PCAP y anexos Expte 000526 Lote 1 SDA 011822.pdf — 67 texto, 8 tabla — https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=2NNu8F2wkehz2FUreOvO43iZFcszQd3SBwInCdEAvgO9L4CIUN6XBrz0PRTDSJHPqenw6nnB8r47JeC9WwWJQraJNZ6/cTLcv7khdRWF2Tk//q7NB2iMZvNyf0xrJmjt
+• [70762] PPTP Expte 000526 El Ronquillo Lote 1 SDA 011822.pdf — 142 texto, 45 tabla, 6 figura — https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=0YHAcmfAYeRc%2B1IcojA/iVeTcNcdAaaPhGU%2BorY7v4GHPcQ1vcfCvpV3q5azmXKcO7cUrZHvnY6Nw5iGvR%2B6FAjxqOpALDVorAuZ5Hlum0V7QB3HKyQaFUExmUVQCerk
+• [70767] TARCAS Resolucion 10_2026 (fichero 2026-f2d32284-4856-4fe9-830f-547c6c66680a) — 18 texto, 5 tabla — https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-f2d32284-4856-4fe9-830f-547c6c66680a
+• [70769] Documento de aprobación del expediente (fichero 2026-f2c03a15-3eff-45c8-94d7-d8d4212909eb) — 6 texto, 1 tabla — https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-f2c03a15-3eff-45c8-94d7-d8d4212909eb
+• [70770] Justificante Apertura Sobre Único (fichero 2026-e24ad842-1be8-4dab-802b-9f2bd4aa40cf) — 2 texto — https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-e24ad842-1be8-4dab-802b-9f2bd4aa40cf
+• [70771] Cuadro con ofertas anormales o desproporcionadas (fichero 2026-d826873d-5bdc-4074-ad80-f2f5cb16199e) — 1 texto, 1 tabla — https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-d826873d-5bdc-4074-ad80-f2f5cb16199e
+• [70772] Nota informativa presentación Recurso (fichero 2026-b46594a9-2950-4fda-8ccb-c387f71c3064) — 2 texto — https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-b46594a9-2950-4fda-8ccb-c387f71c3064
+• [70773] Clasificacion de Ofertas y Propuesta de Adjudicación (fichero 2026-54542943-7d11-4599-9ced-0511d528c084) — 1 texto, 1 tabla — https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-54542943-7d11-4599-9ced-0511d528c084
+• [70774] Informe sobre las ofertas incursas en presunción de anormalidad (fichero 2026-66e66b47-fc4a-461d-8b14-26b2c7bda3df) — 22 texto, 8 tabla — https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-66e66b47-fc4a-461d-8b14-26b2c7bda3df
+• [70775] Informe de Acreditación (fichero 2026-e09a4512-9ee6-46b1-897b-0c3997f97939) — 4 texto, 1 tabla — https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-e09a4512-9ee6-46b1-897b-0c3997f97939
 Sin procesar o fallidos: 16 (PUBLICACION: FAILED_PERMANENT, 2026-82e2cf14-960c-4bc3-ac1d-501ec3c259f5: FAILED_PERMANENT, CCH_20251007_155213_ETAP El Ronquillo.zip: UNAVAILABLE, ES0031102561164001GR0F_20240101_20241231_Horario.csv: UNAVAILABLE, CCH_20260120_161418_ETAP El Ronquillo.zip: UNAVAILABLE, ES0031102561164001GR0F_20250101_20251231_Horario.csv: UNAVAILABLE, 2026-76ca1333-7820-4e5b-89c0-c5e2428ca3e7: NEEDS_DOWNLOAD, 2026-e23616d7-675a-4a70-89ac-6fc85c48da7b: NEEDS_DOWNLOAD, Anuncio de Licitación: NEEDS_DOWNLOAD, Pliego: NEEDS_DOWNLOAD).
-Catálogo publicado por el órgano (se descarga con enlace_descarga):
-• [catalogo:0] PCAP y anexos Expte 000526 Lote 1 SDA 011822.pdf
-• [catalogo:1] PPTP Expte 000526 El Ronquillo Lote 1 SDA 011822.pdf
-• [catalogo:2] CCH_20260120_161418_ETAP El Ronquillo.zip
-• [catalogo:3] CCH_20251007_155213_ETAP El Ronquillo.zip
-• [catalogo:4] 2026-f2d32284-4856-4fe9-830f-547c6c66680a
-• [catalogo:5] 2026-82e2cf14-960c-4bc3-ac1d-501ec3c259f5
-• [catalogo:6] 2026-f2c03a15-3eff-45c8-94d7-d8d4212909eb
-• [catalogo:7] 2026-e24ad842-1be8-4dab-802b-9f2bd4aa40cf
-• [catalogo:8] 2026-d826873d-5bdc-4074-ad80-f2f5cb16199e
-• [catalogo:9] 2026-b46594a9-2950-4fda-8ccb-c387f71c3064
-• [catalogo:10] 2026-54542943-7d11-4599-9ced-0511d528c084
-• [catalogo:11] 2026-66e66b47-fc4a-461d-8b14-26b2c7bda3df
-• [catalogo:12] 2026-e09a4512-9ee6-46b1-897b-0c3997f97939
-• [catalogo:13] PUBLICACION
-• [catalogo:14] 2026-76ca1333-7820-4e5b-89c0-c5e2428ca3e7
-• [catalogo:15] 2026-e23616d7-675a-4a70-89ac-6fc85c48da7b
-• [catalogo:16] Anuncio de Licitación
-• [catalogo:17] Pliego
-• [catalogo:18] Adjudicación
-• [catalogo:19] Formalización
-• [catalogo:20] Memoria justificativa
-• [catalogo:21] Comunicación fecha apertura Sobre 3
-• [catalogo:22] Acta del órgano de asistencia
-• [catalogo:23] Acta del órgano de asistencia
-• [catalogo:24] Resolución del órgano de Contratación por la que se acepta la propuesta de adjudicación del contrato
+
+Catálogo publicado por el órgano, con su enlace de descarga. Son los enlaces de descarga del órgano de contratación (Plataforma de Contratación del Sector Público o la plataforma autonómica): públicos y sin caducidad. Descarga el fichero con tus herramientas y ábreselo a la persona, o llévalo a tu espacio de trabajo para leerlo y trabajar con él; si no puedes descargar ficheros, dale el enlace. Copia la URL entera, tal cual.
+• [catalogo:0] PCAP y anexos Expte 000526 Lote 1 SDA 011822.pdf: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=2NNu8F2wkehz2FUreOvO43iZFcszQd3SBwInCdEAvgO9L4CIUN6XBrz0PRTDSJHPqenw6nnB8r47JeC9WwWJQraJNZ6/cTLcv7khdRWF2Tk//q7NB2iMZvNyf0xrJmjt
+• [catalogo:1] PPTP Expte 000526 El Ronquillo Lote 1 SDA 011822.pdf: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=0YHAcmfAYeRc%2B1IcojA/iVeTcNcdAaaPhGU%2BorY7v4GHPcQ1vcfCvpV3q5azmXKcO7cUrZHvnY6Nw5iGvR%2B6FAjxqOpALDVorAuZ5Hlum0V7QB3HKyQaFUExmUVQCerk
+• [catalogo:2] CCH_20260120_161418_ETAP El Ronquillo.zip: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=54Hz%2BRdUk3ucaTOwICBJlk00lJr4v0LWaizT3QSo5lfJVtb5n4HIGAvTWTKkhYa/MYW2xRYBAtgJ7jwrBrZyswJY5HqD5%2BvCX%2Bfsw66mfh4ZyAJWGsSt0OzTSTyw9JAs
+• [catalogo:3] CCH_20251007_155213_ETAP El Ronquillo.zip: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=G4g76MwCpJRoOX/0VZ33VmevFI5zloUojr7YujJbBZQEJrXRPEfnJEv5bJYqf3nWJVqlpyJSq02NH4kIGCqW65XAEFetX%2BR%2BZa0yyGgblGG1aXEvq3KHa/AEHgtDrQw0
+• [catalogo:4] TARCAS Resolucion 10_2026: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-f2d32284-4856-4fe9-830f-547c6c66680a
+• [catalogo:5] Acuerdo de adjudicación: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-82e2cf14-960c-4bc3-ac1d-501ec3c259f5
+• [catalogo:6] Documento de aprobación del expediente: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-f2c03a15-3eff-45c8-94d7-d8d4212909eb
+• [catalogo:7] Justificante Apertura Sobre Único: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-e24ad842-1be8-4dab-802b-9f2bd4aa40cf
+• [catalogo:8] Cuadro con ofertas anormales o desproporcionadas: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-d826873d-5bdc-4074-ad80-f2f5cb16199e
+• [catalogo:9] Nota informativa presentación Recurso: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-b46594a9-2950-4fda-8ccb-c387f71c3064
+• [catalogo:10] Clasificacion de Ofertas y Propuesta de Adjudicación: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-54542943-7d11-4599-9ced-0511d528c084
+• [catalogo:11] Informe sobre las ofertas incursas en presunción de anormalidad: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-66e66b47-fc4a-461d-8b14-26b2c7bda3df
+• [catalogo:12] Informe de Acreditación: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-e09a4512-9ee6-46b1-897b-0c3997f97939
+• [catalogo:13] PUBLICACION: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=4KIzFT3g2%2BmoiXDItWR/Vjg7F0LICXYt3mHZA9Pu5jxgKOsE14AOT0222z/3CgfGmTQrYNyKRy6ZJUrlfwckp5K2RJGfXw1B8Sy8UsfVhPPfdyQgZAdTm3EfcUAC7CJ6
+• [catalogo:14] RESOLUCIÓN ALZADAS E INFORME 3_4 y 5 2026: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-76ca1333-7820-4e5b-89c0-c5e2428ca3e7
+• [catalogo:15] Resolució alzada 004/26 y 005/26 18052026: https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2026-e23616d7-675a-4a70-89ac-6fc85c48da7b
+• [catalogo:16] Anuncio de Licitación: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=G50VAHxpygDh/5oZlvbpDeVGYAgZaCSP0FPUcGrGF3NYgraWJXkB8pTSkvjy%2BW2je5qxpK4tIBOOl1s3jMH9QXqCKKokXbi5vvWo/lAbWAiHAj0WEJrB5sP7amrh2jBD
+• [catalogo:17] Pliego: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=RAPealgrx6etYsfbXVRyyHRyEZKcMEZJ1mWusTHz4l2sRa6mZEgRz7aVLROMkbR4XcSwLUOFTJhb%2Bv4vnyEL0fiJI%2Bl/rv%2BqHu7yrhI49MY//q7NB2iMZvNyf0xrJmjt
+• [catalogo:18] Adjudicación: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=o3DIpbmjwaPFULWJsYSZMeOKFu7TAocJR/PAZN2C3PSZ%2B34gATxhRIEjMPVjyGYK%2B0%2B/kKOKLK11NAj7EZTlDhHREdiSq9pDxA6JwEcyN68ZyAJWGsSt0OzTSTyw9JAs
+• [catalogo:19] Formalización: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=mck%2BvvBxJCT44bOKuwJHbIuTujf11KMkqbi/H9PdzWU6Eg8vPNi4AMqwoY5Kou8dRItWKafjigZGc58Vtzlp7r7gREFWkCXKG0T50N95MMeB0nvVKRzfe4rpHcnlPhSZ
+• [catalogo:20] Memoria justificativa: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=qQolW3mJ/bfDsOrjIqmM1UMmtrxTNg45qEgitefEIAq3ENhCcPVqjNjpx2MtyFig/1lfUJ3nQDHvMWov8jWCMTJUgItSyqdBRR80zv2M1boC1/zDIE0Kw/PWNnLS0Z0z
+• [catalogo:21] Comunicación fecha apertura Sobre 3: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=bYsl50f%2BavJZE35IR2f5Z8NtbxAjQbYVgqbmOR/s7rBjt5FPpUKsk/b4WIwGCWouhPM/GxUV3mIigxCsu9Zh%2BwozJ8LW/DMzqsdTmscNizeCx2e6p7hqtlp2aFupgHMr
+• [catalogo:22] Acta del órgano de asistencia: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=79vMjxttSp4kGZRrm8rw3IC1uEdTTH7p22%2BDwE/VfeDeRmbz07lr5ZveCcW8R91CvbjGGdRScOAyD4V/wPGt4dUBBGzBsvw4W8%2BGk413ACmCx2e6p7hqtlp2aFupgHMr
+• [catalogo:23] Acta del órgano de asistencia: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=yXyMaeEVRDxZpX7qiCap1IHMkM3KkhhSSng4/FK2GYJ8uLYwFeJRDLSMPiWWDU1Ew6a%2BX5nkCvm/oLYy5hXKo50yLsMTzvpPAJAJrqlXDPP6CYyL7SIrUOBFfNf52ZqA
+• [catalogo:24] Resolución del órgano de Contratación por la que se acepta la propuesta de adjudicación del contrato: https://contrataciondelestado.es/FileSystem/servlet/GetDocumentByIdServlet?cifrado=QUC1GjXXSiLkydRHJBmbpw%3D%3D&DocumentIdParam=AszdO4J6jBvBNSCeoe3VoqMSjD3Kn5k/Yi39d%2B5sM/X3%2BHBfoBzYeUlJu3cFEMkyS6gqhWhZrbLRPAMd91wlX5ei73sAgMUYdQAe81jE7uc//q7NB2iMZvNyf0xrJmjt
+Si un enlace no descarga el fichero (el órgano lo ha retirado o sustituido), los documentos vigentes están en la página de la licitación en el origen: https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2F4f3h%2FRjVyPI8aL3PRS10Q%3D%3D
