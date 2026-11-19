@@ -12,13 +12,11 @@ metadata:
 ## Antes de nada: Licita IA tiene que estar conectado
 
 - Si no tienes disponibles las herramientas de Licita IA (no aparecen, o piden iniciar sesión),
-  **no busques en otras fuentes ni en otros conectores para suplirlas**.
-  - Di a la persona que conecte Licita IA. En ChatGPT: Ajustes → Apps → Licita IA → Conectar. En
-    Claude: Personalizar → Conectores → Licita IA → Conectar.
-  - Si no tiene cuenta, la crea gratis en ese mismo paso, y al terminar vuelve sola a autorizar.
+  di a la persona que conecte Licita IA. En ChatGPT: Complementos → Licita IA → Conectar. En
+  Claude: Personalizar → Conectores → Licita IA → Conectar.
+  - Si no tiene cuenta, la crea en ese mismo paso, y al terminar vuelve sola a autorizar.
   - No respondas «no hay datos»: sin conexión no has consultado nada.
-- Cuando la persona nombra Licita IA, usa **sólo** sus herramientas. Si crees que conviene
-  contrastar con otra fuente, pregúntalo antes.
+- Si combinas estos datos con los de otra fuente, di de dónde sale cada uno.
 
 ## 1. Mira quién es
 
@@ -28,8 +26,8 @@ actividad (lo que Licita le recomienda) y el plan.
 - **Sin empresa o sin líneas:** las recomendaciones serán pobres. Ofrece configurarlas con
   `configurar_lineas`, a partir de lo que la persona cuente que hace su empresa, y confirma
   antes de guardar.
-- **Plan gratuito:** todo lo de consultar funciona. Procesar pliegos a fondo, las recetas, los
-  ficheros del Workbench y la documentación corporativa son de pago. Dilo una vez, sin vender.
+- **Funciones no incluidas:** si una herramienta responde que la organización no la tiene
+  disponible, dilo una vez, tal cual, y sigue con lo que sí funciona.
 
 ## 2. Enséñale lo que hay hoy
 

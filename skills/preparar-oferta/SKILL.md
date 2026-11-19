@@ -12,13 +12,11 @@ metadata:
 ## Antes de nada: Licita IA tiene que estar conectado
 
 - Si no tienes disponibles las herramientas de Licita IA (no aparecen, o piden iniciar sesión),
-  **no busques en otras fuentes ni en otros conectores para suplirlas**.
-  - Di a la persona que conecte Licita IA. En ChatGPT: Ajustes → Apps → Licita IA → Conectar. En
-    Claude: Personalizar → Conectores → Licita IA → Conectar.
-  - Si no tiene cuenta, la crea gratis en ese mismo paso, y al terminar vuelve sola a autorizar.
+  di a la persona que conecte Licita IA. En ChatGPT: Complementos → Licita IA → Conectar. En
+  Claude: Personalizar → Conectores → Licita IA → Conectar.
+  - Si no tiene cuenta, la crea en ese mismo paso, y al terminar vuelve sola a autorizar.
   - No respondas «no hay datos»: sin conexión no has consultado nada.
-- Cuando la persona nombra Licita IA, usa **sólo** sus herramientas. Si crees que conviene
-  contrastar con otra fuente, pregúntalo antes.
+- Si combinas estos datos con los de otra fuente, di de dónde sale cada uno.
 
 Licita IA guarda **recetas**: procedimientos tipo con sus fases, sus criterios de calidad y las
 salidas que deben producir. Las ejecutas tú, fase a fase, con las herramientas del conector.
@@ -29,8 +27,8 @@ salidas que deben producir. Las ejecutas tú, fase a fase, con las herramientas 
   «Estudio de costes», «Extraer modelos»).
 - `ver_receta(procedimiento=<id o nombre>)` devuelve la receta entera: contexto, fases,
   criterios, salidas y qué herramienta del MCP usar en cada paso.
-- Es una función de **plan de pago**. Si responde que el plan no la incluye, dilo una vez y
-  sigue con el método manual de abajo.
+- Si responde que la organización no la tiene disponible, dilo una vez y sigue con el método
+  manual de abajo.
 
 ## 2. Ejecutarla
 
@@ -43,7 +41,7 @@ salidas que deben producir. Las ejecutas tú, fase a fase, con las herramientas 
   plantilla de la empresa) no se puede hacer desde aquí: dilo y deja el contenido listo para
   copiar.
 - Para la documentación propia de la empresa (certificados, solvencia acreditada, CV),
-  `buscar_documentacion_corporativa` (plan de pago).
+  `buscar_documentacion_corporativa`.
 
 ## 3. Método manual (sin receta)
 

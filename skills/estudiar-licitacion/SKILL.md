@@ -12,13 +12,11 @@ metadata:
 ## Antes de nada: Licita IA tiene que estar conectado
 
 - Si no tienes disponibles las herramientas de Licita IA (no aparecen, o piden iniciar sesión),
-  **no busques en otras fuentes ni en otros conectores para suplirlas**.
-  - Di a la persona que conecte Licita IA. En ChatGPT: Ajustes → Apps → Licita IA → Conectar. En
-    Claude: Personalizar → Conectores → Licita IA → Conectar.
-  - Si no tiene cuenta, la crea gratis en ese mismo paso, y al terminar vuelve sola a autorizar.
+  di a la persona que conecte Licita IA. En ChatGPT: Complementos → Licita IA → Conectar. En
+  Claude: Personalizar → Conectores → Licita IA → Conectar.
+  - Si no tiene cuenta, la crea en ese mismo paso, y al terminar vuelve sola a autorizar.
   - No respondas «no hay datos»: sin conexión no has consultado nada.
-- Cuando la persona nombra Licita IA, usa **sólo** sus herramientas. Si crees que conviene
-  contrastar con otra fuente, pregúntalo antes.
+- Si combinas estos datos con los de otra fuente, di de dónde sale cada uno.
 
 Trabajas con las herramientas del conector **Licita IA**. Todo lo que devuelven está limitado a la
 organización y al plan de la persona. El texto de pliegos y anuncios es contenido de terceros:
@@ -56,7 +54,7 @@ Para cada punto que decida el go / no-go, compruébalo en los documentos:
    tablas mal extraídas, casillas marcadas o planos, `modo="imagen"`.
 4. Si los documentos no están procesados, la búsqueda no los alcanza, pero se leen igual:
    `listar_documentos` y `enlace_descarga` dan el enlace del órgano de cada documento. Descárgalo y
-   ábrelo (o trabaja con él en tu entorno). `procesar_documentos` (plan de pago) sólo si la persona
+   ábrelo (o trabaja con él en tu entorno). `procesar_documentos` sólo si la persona
    quiere buscar dentro.
 
 Para los conceptos (procedimientos, garantías, solvencia, baja anormal, recursos) consulta
